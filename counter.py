@@ -29,8 +29,8 @@ def button_callbackdown(channel): # define the downcounter function
 GPIO.add_event_detect(16,GPIO.RISING,callback=button_callbackup,bouncetime=200) # an interrupt for counting down funtion
 GPIO.add_event_detect(12,GPIO.RISING,callback=button_callbackdown,bouncetime=200) # an interrupt for counting up function
 
-while True:
-	sleep(.1)
+while True: # keep the program running
+	sleep(.1) # let the processor sleep for 0.1 second
 
 
 
