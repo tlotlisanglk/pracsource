@@ -22,8 +22,8 @@ def button_callbackdown(channel): # define the downcounter function
 	global c		  # define global variable c
 	c = (c - 1) % 8 # decrement c and find its remainder vulue
 	GPIO.output(18, (c >> 0) & 1)  # is the 0 bit of value c set
-	GPIO.output(22, (c >> 1) & 1)  # is the 0 bit of value c set
-	GPIO.output(11, (c >> 2) & 1)  # is the 0 bit of value c set
+	GPIO.output(22, (c >> 1) & 1)  # is the 1 bit of value c set
+	GPIO.output(11, (c >> 2) & 1)  # is the 2 bit of value c set
 	print(c)		       # Test if the value of c is decrementing
 
 GPIO.add_event_detect(16,GPIO.RISING,callback=button_callbackup,bouncetime=200) # an interrupt for counting down funtion
