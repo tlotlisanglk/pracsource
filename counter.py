@@ -1,4 +1,4 @@
-from time import sleep	# get sleep funtion from time class
+from time import sleep	# get sleep funtion from time class test 08 08 
 import RPi.GPIO as GPIO # get GPIO from RPi library
 
 print("Count up using left button and down using right button:\n") # User guide message
